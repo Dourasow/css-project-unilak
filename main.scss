@@ -1,27 +1,24 @@
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
-
-header {
+header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
-}
 
+}
 header .nav {
   display: flex;
   gap: 2rem;
 }
-
-header .nav > a {
+header .nav > a{
   text-decoration: none;
   color: black;
 }
-
-.firstClass {
+.firstClass{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -29,47 +26,39 @@ header .nav > a {
   height: 60vh;
   padding: 1rem;
 }
-
-.firstClass .sideNotes {
+.firstClass .sideNotes{
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  justify-content: center;
+  justify-content: center ;
   height: 100%;
 }
-
-.firstClass .sideNotes > button {
-  width: -moz-fit-content;
+.firstClass .sideNotes > button{
   width: fit-content;
-  padding: 0.5rem;
-  background: #8EADD5;
-  color: white;
-  border: none;
+   padding: .5rem;
+   background: #8EADD5;
+   color: white;
+   border:none;
 }
-
-.firstClass .image1 > img {
+.firstClass .image1 > img{
   height: 100%;
 }
-
-.threeDivision {
+.threeDivision{
   height: 80vh;
   background: red;
   margin-top: 4rem;
 }
-
-.threeDivision .topText {
-  text-align: center;
+.threeDivision .topText{
+text-align: center;
 }
-
-.threeDivision .topText > h2 {
-  font-size: 2em;
-  padding: 1rem;
-  width: 40%;
-  background: white;
-  margin: auto;
+.threeDivision .topText > h2{
+ font-size: 2em;
+ padding: 1rem;
+ width: 40%;
+ background: white;
+ margin: auto;
 }
-
-.threeDivision .testimonialCards {
+.threeDivision .testimonialCards{
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -77,8 +66,7 @@ header .nav > a {
   padding: 1rem;
   gap: 1rem;
 }
-
-.threeDivision .testimonialCards > .testimonials {
+.threeDivision .testimonialCards > .testimonials{
   width: 33.3%;
   height: 100%;
   display: flex;
@@ -86,29 +74,30 @@ header .nav > a {
   background: yellow;
   padding: 1rem;
 }
-
-.testimonialCards .testimonials > img {
-  height: 60%;
-  width: 60%;
-  margin: auto;
+.testimonialCards .testimonials > img{
+height: 60%;
+width: 60%;
+margin: auto;
 }
 
-@media (max-width: 25.8rem) {
-  .firstClass {
+
+@media (max-width: 25.8rem){
+  .firstClass{
     display: flex;
     flex-direction: column;
   }
-  .threeDivision {
+  .threeDivision{
     width: 100vw;
     background: red;
   }
-  .threeDivision .testimonialCards {
+  .threeDivision .testimonialCards{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+
   }
-  .testimonials {
+  .testimonials{
     width: 100%;
   }
-}/*# sourceMappingURL=main.css.map */
+}
