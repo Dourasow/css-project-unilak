@@ -1,5 +1,10 @@
+
+
+$colors: ($primary-color: #ffffff, $secondary-color: red);
+$default-padding: 1rem;
+$border-default: solid map-get($colors,$secondary-color) 4px;
 *{
-  padding: 0;
+  padding: 0rem;
   margin: 0;
   box-sizing: border-box;
 }
@@ -7,16 +12,22 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
+  padding: $default-padding;
+  border: {
+top: $border-default;
+bottom:  $border-default;
+left: $border-default;
+right: $border-default;
+  }
 
-}
-header .nav {
-  display: flex;
-  gap: 2rem;
-}
-header .nav > a{
-  text-decoration: none;
-  color: black;
+  .nav {
+    display: flex;
+    gap: 2rem;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 .firstClass{
   display: flex;
@@ -25,27 +36,27 @@ header .nav > a{
   width: 100%;
   height: 60vh;
   padding: 1rem;
-}
-.firstClass .sideNotes{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center ;
-  height: 100%;
-}
-.firstClass .sideNotes > button{
-  width: fit-content;
-   padding: .5rem;
-   background: #8EADD5;
-   color: white;
-   border:none;
-}
-.firstClass .image1 > img{
-  height: 100%;
-}
+  .sideNotes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center ;
+    height: 100%;
+    button{
+      width: fit-content;
+       padding: .5rem;
+       background: #8EADD5;
+       color: $primary-color;
+       border:none;
+    }
+  }
+  .image1 > img{
+    height: 100%;
+  }
+} 
 .threeDivision{
   height: 80vh;
-  background: red;
+  background: rgb(31, 20, 20);
   margin-top: 4rem;
 }
 .threeDivision .topText{
@@ -55,7 +66,7 @@ text-align: center;
  font-size: 2em;
  padding: 1rem;
  width: 40%;
- background: white;
+ background: $primary-color;
  margin: auto;
 }
 .threeDivision .testimonialCards{
@@ -88,7 +99,7 @@ margin: auto;
   }
   .threeDivision{
     width: 100vw;
-    background: red;
+    background: $secondary-color;
   }
   .threeDivision .testimonialCards{
     display: flex;
@@ -101,3 +112,4 @@ margin: auto;
     width: 100%;
   }
 }
+
