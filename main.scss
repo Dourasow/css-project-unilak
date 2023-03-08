@@ -4,7 +4,7 @@ $colors: ($primary-color: #ffffff, $secondary-color: red);
 $default-padding: 1rem;
 $border-default: solid map-get($colors,$secondary-color) 4px;
 *{
-  padding: 0rem;
+  padding: $default-padding * 4;
   margin: 0;
   box-sizing: border-box;
 }
@@ -53,11 +53,21 @@ right: $border-default;
   .image1 > img{
     height: 100%;
   }
+  @media (max-width: 25.8rem){
+    .firstClass{
+      display: flex;
+      flex-direction: column;
+    }
+  }
 } 
 .threeDivision{
   height: 80vh;
   background: rgb(31, 20, 20);
   margin-top: 4rem;
+  @media (max-width: 25.8rem){
+      width: 100vw;
+      background: $secondary-color;
+    }
 }
 .threeDivision .topText{
 text-align: center;
@@ -91,16 +101,6 @@ width: 60%;
 margin: auto;
 }
 
-
-@media (max-width: 25.8rem){
-  .firstClass{
-    display: flex;
-    flex-direction: column;
-  }
-  .threeDivision{
-    width: 100vw;
-    background: $secondary-color;
-  }
   .threeDivision .testimonialCards{
     display: flex;
     flex-direction: column;
@@ -111,5 +111,5 @@ margin: auto;
   .testimonials{
     width: 100%;
   }
-}
+} 
 
