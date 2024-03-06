@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+header .nav {
+  display: flex;
+  gap: 2rem;
+}
+header .nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.firstClass {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 60vh;
+  padding: 1rem;
+}
+.firstClass .sideNotes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 1rem;
+}
+.firstClass .sideNotes button {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  background-color: #9CB7DA;
+  color: white;
+  border: none;
+}
+.firstClass .image > img {
+  height: 100%;
+}
+
+.divisionThree {
+  height: 100vh;
+}
+.divisionThree .toptext {
+  text-align: center;
+}
+.divisionThree .toptext h2 {
+  font-size: 2.5em;
+  padding: 1rem;
+  width: 30%;
+  background-color: white;
+  margin: auto;
+}
+.divisionThree .testimonialsCard {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70%;
+  margin: auto;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+.divisionThree .testimonialsCard .testimonials {
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* padding: 1rem;
+  margin: 1rem; */
+}
+.divisionThree .testimonialsCard .testimonials img {
+  height: 60%;
+  width: 60%;
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */
